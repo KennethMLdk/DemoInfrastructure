@@ -212,7 +212,7 @@
                              "autoUpgradeMinorVersion": true,
                              "settings": {
                                  "fileUris": [
-                                     "/scripts/dcScript.ps1"
+                                     "https://raw.githubusercontent.com/KennethMLdk/DemoInfrastructure/main/scripts/dcScript.ps1"
                                  ]
                              },
                              "protectedSettings": {
