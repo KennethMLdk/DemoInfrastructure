@@ -28,7 +28,7 @@
             "properties": {}
         },
         {
-            "name": "[concat('deployment-',variables('vnetName'))]",
+            "name": "deploy-vnet",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2020-10-01",
             "resourceGroup": "[variables('rgName')]",
@@ -75,7 +75,7 @@
             "apiVersion": "2020-10-01",
             "resourceGroup": "[variables('rgName')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Resources/deployments',concat('deployment-',variables('vnetName')))]"
+                "[resourceId('Microsoft.Resources/deployments','deploy-vnet')]"
             ],
             "properties": {
                 "mode": "Incremental",
