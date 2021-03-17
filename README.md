@@ -7,7 +7,7 @@ Deploys an isolated VNet and domain controller to your Azure subscription.
 Connect to Azure subscription using Powershell or Az CLI
 Run this cmdlet:
 
-New-AzSubscriptionDeployment -Name demoTenant -Location eastus -TemplateUri https://raw.githubusercontent.com/KennethMLdk/DemoInfrastructure/main/azuredeploy.json
+> New-AzSubscriptionDeployment -Name demoTenant -Location eastus -TemplateUri https://raw.githubusercontent.com/KennethMLdk/DemoInfrastructure/main/azuredeploy.json
 
 You will be prompted for the demo tenant prefix parameter (that is the text in front of .onmicrosoft.com) e.g. m365x12345:
 
